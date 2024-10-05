@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The 17 SDG's</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url("https://wallpapers.com/images/hd/beige-floral-aesthetic-background-2vj5yogvpikt97ex.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-color: #f8f9fa;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-family: 'Cambria', New Times Roman;
+            font-size: 50px;
+            color: rgb(10, 22, 10);
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        #description {
+            font-family: 'candara', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(74, 74, 97);
+            background-color: rgb(230, 205, 136);
+            font-size: 18px;
+            text-align: justify;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(78, 10, 142);
+            background: linear-gradient(to right, lightblue, rgb(23, 118, 185));
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .image-container a {
+            display: inline-block;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .image-container a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .image-container img {
+            height: 200px; /* Ensures uniform height */
+            width: 200px; /* Ensures uniform width */
+            object-fit: cover; /* Ensures the images fit without distortion */
+        }
+        footer {
+            padding: 10px;
+            background: linear-gradient(to right, rgb(109, 109, 5), orange, red, violet, purple);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: larger;
+            text-align: center;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>The 17 Sustainable Development Goals</h1>
+        <h2>What are SDG's?</h2>
+        <p id="description">
+            The 17 Sustainable Development Goals (SDGs) are a universal call to action to end poverty, protect the planet, and ensure that all people enjoy peace and prosperity by 2030. They are a set of interconnected global goals adopted by all United Nations Member States in 2015 as part of the 2030 Agenda for Sustainable Development.
+            The SDGs address the global challenges we face, including poverty, inequality, climate change, environmental degradation, peace, and justice. They provide a shared blueprint for peace and prosperity for people and the planet, now and into the future.
+        </p>
+
+        <div class="image-container" id="imageContainer">
+            <!-- Images will be added here by JavaScript -->
+        </div>
+
+        <footer>
+            The 17 SDGs - A Global Vision for a Better Future
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const imageUrls = [
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sustainable_Development_Goal_1.png/200px-Sustainable_Development_Goal_1.png?20180106214026", link: "pro1.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Sustainable_Development_Goal_2.png/200px-Sustainable_Development_Goal_2.png?20180106213933", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sustainable_Development_Goal_3.png/200px-Sustainable_Development_Goal_3.png?20180106213914", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Sustainable_Development_Goal_4.png/200px-Sustainable_Development_Goal_4.png?20180106213857", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sustainable_Development_Goal_5.png/200px-Sustainable_Development_Goal_5.png?20180106213842", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sustainable_Development_Goal_6.png/900px-Sustainable_Development_Goal_6.png?20180106213729", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sustainable_Development_Goal_7.png/200px-Sustainable_Development_Goal_7.png?20180106213712", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Sustainable_Development_Goal_8.png/200px-Sustainable_Development_Goal_8.png?20180106213606", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Sustainable_Development_Goal_9.png/200px-Sustainable_Development_Goal_9.png?20180106213548", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sustainable_Development_Goal_10.png/200px-Sustainable_Development_Goal_10.png?20180106213114", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sustainable_Development_Goal_11.png/200px-Sustainable_Development_Goal_11.png?20180106213038", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Sustainable_Development_Goal_12.png/200px-Sustainable_Development_Goal_12.png?20180106213018", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sustainable_Development_Goal_13.png/200px-Sustainable_Development_Goal_13.png?20180106212953", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sustainable_Development_Goal_14.png/200px-Sustainable_Development_Goal_14.png?20180106212933", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sustainable_Development_Goal_15.png/200px-Sustainable_Development_Goal_15.png?20180106212905", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sustainable_Development_Goal_16.png/200px-Sustainable_Development_Goal_16.png?20180106212820", link: "pra.html" },
+            { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sustainable_Development_Goal_17.png/900px-Sustainable_Development_Goal_17.png?20180106212721", link: "pra.html" }
+        ];
+
+        const imageContainer = document.getElementById('imageContainer');
+
+        imageUrls.forEach(item => {
+            const a = document.createElement('a');
+            a.href = item.link;
+            a.target = "_blank";
+
+            const img = document.createElement('img');
+            img.src = item.url;
+            img.alt = "SDG Image";
+            img.classList.add("shadow-sm");
+
+            a.appendChild(img);
+            imageContainer.appendChild(a);
+        });
+    </script>
+    <script src="https://askelliebots.blob.core.windows.net/askelliefiles/widget-integration-1642.js"></script>
+
+</body>
+</html>
