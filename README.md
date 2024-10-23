@@ -19,3 +19,6 @@ Technologies Used
 HTML: For structuring the content.
 CSS: For styling and layout design.
 JavaScript: For interactive elements and functionalities.
+
+![Screenshot 2024-10-23 222952](https://github.com/user-attachments/assets/fb1dc019-00b3-40dc-bbf9-a4540ba96dd0)
+![Screenshot 2024-10-23 223017](https://github.com/user-attachments/assets/37269a13-8cf0-444c-aefe-baa5d5e4fae8)
